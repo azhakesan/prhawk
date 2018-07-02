@@ -16,30 +16,27 @@ Install NodeJS version 6+ and NPM version 5+ at local system. Please follow the 
 
 # Installation
 <p>The package.json file contains all dependency NPM modules and follow the steps</p>
- <strong>step 1:</strong> npm install
-
+<strong>step 1:</strong> npm install
 <p><strong>Step 2:</strong> swagger project start</p>
 You can see in console with below localhost url and port. Now, the application is running your system.
-project started here: http://localhost:10010/prhawk
-
+project started here: <a href="http://localhost:10010/prhawk">http://localhost:10010/prhawk</a>
 <p>To Run the unit test case, please execute the below command. (supertest framework used for testing)</p>
 <strong>Step 3:</strong> npm test
-
 <p>To edit the swagger design.</p>
 <strong>Step 4:</strong>swagger project edit
 
 # PRHawk API:
-<p>[http://localhost:10010/prhawk/{userId}/repo](http://localhost:10010/prhawk/{userId}/repo)</p>
-<p>http://localhost:10010/prhawk/user/{userId}?page=1&per_page=1 (with pagination)</p>
+<p><a href="http://localhost:10010/prhawk/{userId}/repo">http://localhost:10010/prhawk/{userId}/repo</a></p>
+<p><a href="http://localhost:10010/prhawk/user/{userId}?page=1&per_page=1">http://localhost:10010/prhawk/user/{userId}?page=1&per_page=1</a> (with pagination)</p>
 e.g
-<p>http://localhost:10010/prhawk/azhakesan/repo</p>
-<p>http://localhost:10010/prhawk/user/azhakesan?page=1&per_page=1</p>
+<p><a href="http://localhost:10010/prhawk/azhakesan/repo">http://localhost:10010/prhawk/azhakesan/repo</a></p>
+<p><a href="http://localhost:10010/prhawk/user/azhakesan?page=1&per_page=1">http://localhost:10010/prhawk/user/azhakesan?page=1&per_page=1</a></p>
 
 # PRHawk UI Page
-<p>http://localhost:10010/prhawk/user/{userId} </p>
-<p>http://localhost:10010/prhawk/user/{userId}?page=1&per_page=1</p>
+<p><a href="http://localhost:10010/prhawk/user/{userId}">http://localhost:10010/prhawk/user/{userId}</a> </p>
+<p><a href="http://localhost:10010/prhawk/user/{userId}?page=1&per_page=1">http://localhost:10010/prhawk/user/{userId}?page=1&per_page=1</a></p>
 e.g
-<p>http://localhost:10010/prhawk/user/azhakesan </p>
-<p>http://localhost:10010/prhawk/user/azhakesan?page=1&per_page=1 (with pagination)</p?
+<p><a href="http://localhost:10010/prhawk/user/azhakesan>http://localhost:10010/prhawk/user/azhakesan</a> </p>
+<p><a href="http://localhost:10010/prhawk/user/azhakesan?page=1&per_page=1">http://localhost:10010/prhawk/user/azhakesan?page=1&per_page=1</a> (with pagination)</p?
 
 Thank you.!
