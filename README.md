@@ -11,35 +11,35 @@ The application have two parts.
 2. PRHawk UI - Simple UI page will displayed with all Public Git Repo name associated the user given in the url path parameter. (Jade template framework used to display the UI)
    The UI code will be moved as separate project later.
 
-Prerequisite
+# Prerequisite
 Install NodeJS version 6+ and NPM version 5+ at local system. Please follow the below steps to run the Prerequisite
 
-Installation
-The package.json file contains all dependency NPM modules and follow the steps
-step 1: npm install
+# Installation
+<p>The package.json file contains all dependency NPM modules and follow the steps</p>
+inline step 1: npm install
 
-Step 2: swagger project start
+<p>Step 2: swagger project start</p>
 You can see in console with below localhost url and port. Now, the application is running your system.
 project started here: http://localhost:10010/prhawk
 
-To Run the unit test case, please execute the below command. (supertest framework used for testing)
+<p>To Run the unit test case, please execute the below command. (supertest framework used for testing)</p>
 Step 3: npm test
 
-To edit the swagger design.
+<p>To edit the swagger design.</p>
 Step 4: swagger project edit
 
-PRHawk API:
-http://localhost:10010/prhawk/{userId}/repo
-http://localhost:10010/prhawk/user/{userId}?page=1&per_page=1 (with pagination)
+# PRHawk API:
+<p>http://localhost:10010/prhawk/{userId}/repo</p>
+<p>http://localhost:10010/prhawk/user/{userId}?page=1&per_page=1 (with pagination)</p>
 e.g
-http://localhost:10010/prhawk/azhakesan/repo
-http://localhost:10010/prhawk/user/azhakesan?page=1&per_page=1
+<p>http://localhost:10010/prhawk/azhakesan/repo</p>
+<p>http://localhost:10010/prhawk/user/azhakesan?page=1&per_page=1</p>
 
-PRHawk UI Page
-http://localhost:10010/prhawk/user/{userId}
-http://localhost:10010/prhawk/user/{userId}?page=1&per_page=1
+# PRHawk UI Page
+<p>http://localhost:10010/prhawk/user/{userId} </p>
+<p>http://localhost:10010/prhawk/user/{userId}?page=1&per_page=1</p>
 e.g
-http://localhost:10010/prhawk/user/azhakesan
-http://localhost:10010/prhawk/user/azhakesan?page=1&per_page=1 (with pagination
+<p>http://localhost:10010/prhawk/user/azhakesan </p>
+<p>http://localhost:10010/prhawk/user/azhakesan?page=1&per_page=1 (with pagination)</p?
 
 Thank you.!
