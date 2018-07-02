@@ -16,20 +16,20 @@ Install NodeJS version 6+ and NPM version 5+ at local system. Please follow the 
 
 # Installation
 <p>The package.json file contains all dependency NPM modules and follow the steps</p>
-inline step 1: npm install
+ <strong>step 1:</strong> npm install
 
-<p>Step 2: swagger project start</p>
+<p><strong>Step 2:</strong> swagger project start</p>
 You can see in console with below localhost url and port. Now, the application is running your system.
 project started here: http://localhost:10010/prhawk
 
 <p>To Run the unit test case, please execute the below command. (supertest framework used for testing)</p>
-Step 3: npm test
+<strong>Step 3:</strong> npm test
 
 <p>To edit the swagger design.</p>
-Step 4: swagger project edit
+<strong>Step 4:</strong>swagger project edit
 
 # PRHawk API:
-<p>http://localhost:10010/prhawk/{userId}/repo</p>
+<p>[http://localhost:10010/prhawk/{userId}/repo]http://localhost:10010/prhawk/{userId}/repo</p>
 <p>http://localhost:10010/prhawk/user/{userId}?page=1&per_page=1 (with pagination)</p>
 e.g
 <p>http://localhost:10010/prhawk/azhakesan/repo</p>
