@@ -29,7 +29,7 @@ project started here: http://localhost:10010/prhawk
 <strong>Step 4:</strong>swagger project edit
 
 # PRHawk API:
-<p>[http://localhost:10010/prhawk/{userId}/repo]http://localhost:10010/prhawk/{userId}/repo</p>
+<p>[http://localhost:10010/prhawk/{userId}/repo](http://localhost:10010/prhawk/{userId}/repo)</p>
 <p>http://localhost:10010/prhawk/user/{userId}?page=1&per_page=1 (with pagination)</p>
 e.g
 <p>http://localhost:10010/prhawk/azhakesan/repo</p>
