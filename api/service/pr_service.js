@@ -24,7 +24,7 @@ function _getGitHubRepositories(userId, page, perPage) {
                 json: true,
                 timeout: helper.constant.TIMEOUT, // timeout
                 headers: {
-                    'Authorization': auth,
+                  //  'Authorization': auth,
                     'User-Agent': userId
                 }
             }, function (error, response) {
@@ -53,7 +53,7 @@ function _getPullRequestCount(repo, userId) {
                 json: true,
                 timeout: helper.constant.TIMEOUT, // timeout
                 headers: {
-                    'Authorization': auth,
+                 //   'Authorization': auth,
                     'User-Agent': userId
                 }
             }, function (error, response) {
