@@ -37,6 +37,6 @@ e.g
 <p><a href="http://localhost:10010/prhawk/user/{userId}?page=1&per_page=1">http://localhost:10010/prhawk/user/{userId}?page=1&per_page=1</a></p>
 e.g
 <p><a href="http://localhost:10010/prhawk/user/azhakesan>http://localhost:10010/prhawk/user/azhakesan</a> </p>
-<p><a href="http://localhost:10010/prhawk/user/azhakesan?page=1&per_page=1">http://localhost:10010/prhawk/user/azhakesan?page=1&per_page=1</a> (with pagination)</p?
+<p><a href="http://localhost:10010/prhawk/user/azhakesan?page=1&per_page=1">http://localhost:10010/prhawk/user/azhakesan?page=1&per_page=1</a> (with pagination)</p>
 
 <p>Thank you.!</p>
