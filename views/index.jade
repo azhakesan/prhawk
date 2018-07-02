@@ -1,0 +1,12 @@
+doctype html
+html
+    head
+        title Display User Public Git Hub Repos
+    body
+        h1 Git Repository of #{user}
+
+        ul
+            for repo in result
+                li: a(href="#{repo.html_url}" target="_blank") #{repo.name} (#{repo.pull_count})
+            else
+                li sorry, no repo!

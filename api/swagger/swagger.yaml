@@ -1,0 +1,106 @@
+swagger: "2.0"
+info:
+  version: "0.0.1"
+  title: PRHawk API 
+# during dev, should point to your local machine
+host: localhost:10010
+# basePath prefixes all resource paths 
+basePath: /prhawk
+# 
+schemes:
+  # tip: remove http to make production-grade
+  - http
+  - https
+# format of bodies a client can send (Content-Type)
+consumes:
+  - application/json
+# format of the responses to the client (Accepts)
+produces:
+  - application/json
+paths:
+  /{userId}/repo:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: pr_controller
+    get:
+      description: Returns 'Hello' to the caller
+      # used as the method name of the controller
+      operationId: getUserRepositories
+      parameters:
+        - name: userId
+          in: path
+          description: User Id
+          required: true
+          type: string
+        - name: page
+          in: query
+          description: page number
+          required: false
+          type: number
+        - name: per_page
+          in: query
+          description: per page
+          required: false
+          type: number
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/PrResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /swagger:
+    x-swagger-pipe: swagger_raw
+# complex objects have schema definitions
+definitions:
+  PrResponse:
+    type: object
+    properties:
+      code:
+        type: string
+        description: 'display code '
+      message:
+        type: string
+        description: 'display message '
+      page:
+        type: string
+        description: 'displays the  Page'
+      per_page:
+        type: string
+        description: 'displays the per page no of records'
+      repos:
+        type: array
+        items:
+          $ref: '#/definitions/repo_record'
+  ErrorResponse:
+    required:
+      - message
+    properties:
+      code:
+        type: string
+        description: 'display code '
+      status:
+        type: string
+        description: 'display status '
+      message:
+        type: string
+        description: 'display message '
+  repo_record:
+    type: object
+    title: Repo details
+    properties:
+      id: 
+        type: number
+        description: 'Description:  id'
+      name:
+        type: string
+        description: 'Description: repo url  '
+      html_url:
+        type: string
+        description: 'Description: html_urll  '
+      pull_count:
+        type: number
+        description: 'Description: repo url  '
