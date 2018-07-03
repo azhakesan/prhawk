@@ -7,7 +7,11 @@ module.exports = {
     getGitHubRepositories: _getGitHubRepositories,
     getPullRequestCount: _getPullRequestCount
 };
-const auth = "Basic " + new Buffer("snkirklandinterview" + ':' + "1fff4d9bdc4e0a368d72319bce9fa85d89d39ff6").toString("base64");
+/** Global Variable */
+var PR_USER_ID = process.env.PR_USER_ID;
+var PR_PASSWORD = process.env.PR_PWD;
+const auth = "Basic " + new Buffer(PR_USER_ID + ':' + PR_PASSWORD).toString("base64");
+
 /**
  * This function return the List of Public GitHup repo for given user.
  * @param userId
@@ -24,13 +28,14 @@ function _getGitHubRepositories(userId, page, perPage) {
                 json: true,
                 timeout: helper.constant.TIMEOUT, // timeout
                 headers: {
-                  //  'Authorization': auth,
+                    'Authorization': auth,
                     'User-Agent': userId
                 }
             }, function (error, response) {
                 if (error) {
                     reject(helper.handleError(error));
                 } else if (response != null && response.statusCode === 200) {
+
                     resolve(helper.handleSuccess(response.body));
                 } else {
                     reject(helper.handleError(response));
@@ -53,7 +58,7 @@ function _getPullRequestCount(repo, userId) {
                 json: true,
                 timeout: helper.constant.TIMEOUT, // timeout
                 headers: {
-                 //   'Authorization': auth,
+                    'Authorization': auth,
                     'User-Agent': userId
                 }
             }, function (error, response) {
